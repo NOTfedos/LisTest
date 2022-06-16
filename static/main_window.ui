@@ -6,26 +6,54 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>620</width>
-    <height>400</height>
+    <width>646</width>
+    <height>383</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>20</y>
-      <width>181</width>
-      <height>158</height>
+      <x>410</x>
+      <y>0</y>
+      <width>231</width>
+      <height>331</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
+     <property name="formAlignment">
+      <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Частота X (a)</string>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="1">
       <widget class="QLineEdit" name="freq_y_lineedit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>3</string>
        </property>
@@ -33,6 +61,12 @@
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Частота Y (b)</string>
        </property>
@@ -40,6 +74,12 @@
      </item>
      <item row="1" column="1">
       <widget class="QLineEdit" name="freq_x_lineedit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -47,6 +87,12 @@
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Цвет линии</string>
        </property>
@@ -54,6 +100,12 @@
      </item>
      <item row="2" column="1">
       <widget class="QComboBox" name="color_combobox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <item>
         <property name="text">
          <string>Синий</string>
@@ -78,6 +130,12 @@
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Толщина линии</string>
        </property>
@@ -85,11 +143,12 @@
      </item>
      <item row="3" column="1">
       <widget class="QComboBox" name="width_combobox">
-       <item>
-        <property name="text">
-         <string/>
-        </property>
-       </item>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <item>
         <property name="text">
          <string>1</string>
@@ -114,6 +173,12 @@
      </item>
      <item row="4" column="0" colspan="2">
       <widget class="QPushButton" name="plot_button">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Обновить фигуру</string>
        </property>
@@ -121,15 +186,14 @@
      </item>
      <item row="5" column="0" colspan="2">
       <widget class="QPushButton" name="save_button">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Сохранить фигуру в файл</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Частота X (a)</string>
        </property>
       </widget>
      </item>
@@ -141,8 +205,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>620</width>
-     <height>21</height>
+     <width>646</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>

@@ -1,3 +1,2 @@
 PyQt5==5.12.1
-PyQt5-sip==4.19.15
-matplotlib==2.2.2
+numpy==1.21.6
